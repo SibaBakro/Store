@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>store</title>
+    <link rel="stylesheet" href="assets/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <script type="text/javascript" src="assets/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <style>
+    
+    .form-floating{
+        width: 25%;
+        margin-left: 60px;
+    }
+    #form-floating1 {
+        margin-top: 50px;
+    }
+    .form-check{
+        margin-top: 50px;
+        margin-left: 60px;
+    }
+    .form-label{
+        margin-top: 50px;
+        margin-left: 60px;
+        width: 100%;
+    }
+    .form-range{
+        margin-top: 20px;
+        margin-left: 60px;
+        width: 25%;
+    }
+    .vline
+    {
+    position:fixed;
+    top:0;
+    left:50%;
+    bottom:0; margin:0;
+    border:none;
+    border-right:solid 1px black;
+    z-index:10;
+    }
+    .card{
+        position:fixed;
+        left:70%;
+        top: 100px;
+        bottom: 70px;
+    }
+    
+    </style>
+</head>
+<body >
+    <nav class="navbar navbar-expand-md bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid" >
+        <a class="navbar-brand mb-0 h1" href="#">ShoppingWorld</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+            </li>
+            </ul>
+            <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit" style="border-color: white; color: aliceblue;">Search</button >
+            </form>
+        </div>
+        </div>
+    </nav>
+    <main>
+    <section>
+        
+        <div class="form-floating mb-3" id="form-floating1">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">Clothing Item</label>
+        </div>
+        <div class="form-floating">
+            <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+            <label for="floatingPassword">Color</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+            <label class="form-check-label" for="inlineCheckbox1">s</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+            <label class="form-check-label" for="inlineCheckbox2">m</label>
+        </div>
+        <div class="form-check form-check-inline">
+            <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3" >
+            <label class="form-check-label" for="inlineCheckbox3">l </label>
+        </div>
+        <div>
+            <label for="customRange1" class="form-label">Budget (20-500$)</label>
+        <input type="range" class="form-range" id="customRange1">
+    </div>
+    <div>
+        <input class="btn btn-primary" type="submit" value="Submit" style="margin-left: 60px; ">
+    </div>
+</section>
+<section>
+    <div >
+        <hr class="vline" />
+    </div>
+</section>
+<section>
+    <div class="card" style="width: 18rem;">
+        <img src="assets/imgs/jacket.jpg" class="card-img-top" alt="#">
+        <div class="card-body">
+        <h5 class="card-title">Waterproof Jacket</h5>
+        <p class="card-text"><p style="margin-bottom: 1px;">Fabric Type : Polyester </p>
+            <p style="margin-bottom: 1px;">Origin : Imported</p>
+            <p>Care Instructions : Machine Wash</p>
+        </p>
+        <a href="#" class="btn btn-primary">Add to cart</a>
+        </div>
+    </div>
+</section>
+    </main>
+</body>
+</html>
